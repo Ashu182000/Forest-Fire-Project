@@ -1,0 +1,87 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "application",
+        "description": "application",
+        "peekOfCode": "def index():\n    return render_template('index.html')\n@app.route('/predictdata',methods=['GET','POST'])\ndef predict_datapoint():\n    if request.method=='POST':\n        Temperature=float(request.form.get('Temperature'))\n        RH = float(request.form.get('RH'))\n        Ws = float(request.form.get('Ws'))\n        Rain = float(request.form.get('Rain'))\n        FFMC = float(request.form.get('FFMC'))",
+        "detail": "application",
+        "documentation": {}
+    },
+    {
+        "label": "predict_datapoint",
+        "kind": 2,
+        "importPath": "application",
+        "description": "application",
+        "peekOfCode": "def predict_datapoint():\n    if request.method=='POST':\n        Temperature=float(request.form.get('Temperature'))\n        RH = float(request.form.get('RH'))\n        Ws = float(request.form.get('Ws'))\n        Rain = float(request.form.get('Rain'))\n        FFMC = float(request.form.get('FFMC'))\n        DMC = float(request.form.get('DMC'))\n        ISI = float(request.form.get('ISI'))\n        Classes = float(request.form.get('Classes'))",
+        "detail": "application",
+        "documentation": {}
+    }
+]
